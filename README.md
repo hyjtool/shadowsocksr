@@ -36,7 +36,9 @@ move to "~/shadowsocksr/shadowsocks", then run:
 
 Check all the options via `-h`.
 
-You can also use a configuration file instead (recommend):move to "~/shadowsocksr" and edit the file "user-config.json".<br>Then move to "\~/shadowsocksr/shadowsocks" again just run:
+### You can also use a configuration file instead (recommend):
+<br>Move to "~/shadowsocksr" and edit the file "user-config.json",
+<br>then to "\~/shadowsocksr/shadowsocks" again just run:
 
     python server.py
 
