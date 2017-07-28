@@ -26,7 +26,7 @@ Windows:
 
 ### Usage for single user on linux platform
 
-If you clone it into "~/shadowsocksr"  
+If you clone it into  ~/shadowsocksr  
 move to "~/shadowsocksr", then run:
 
     bash initcfg.sh
