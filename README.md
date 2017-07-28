@@ -30,9 +30,9 @@ move to "~/shadowsocksr", then run:
 
     bash initcfg.sh
 
-move to "~/shadowsocksr/shadowsocks", then run:
+move to "~/shadowsocksr/shadowsocks", then run in background :
 
-    python server.py -p 443 -k password -m aes-128-cfb -O auth_aes128_md5 -o tls1.2_ticket_auth_compatible
+    python server.py -p 443 -k password -m aes-128-cfb -O auth_aes128_md5 -o tls1.2_ticket_auth_compatible -d start
 
 Check all the options via `-h`.
 
@@ -44,15 +44,15 @@ Check all the options via `-h`.
 
 To run in the background:
 
-    ./logrun.sh
+    python server.py -d start
 
-To stop:
+To stop/restart:
 
-    ./stop.sh
+    python server.py -d stop/restart
 
 To monitor the log:
 
-    ./tail.sh
+    tail -f /var/log/shadowsocksr.log
 
 
 Client
